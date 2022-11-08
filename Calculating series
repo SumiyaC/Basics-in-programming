@@ -1,0 +1,36 @@
+#a
+def factorial(n):
+    if n == 0:
+        return 1
+    return n*factorial(n - 1)
+
+number=int(input("Enter a nonnegative integer:", ))
+print("Factorial of the given number is:", factorial(number))
+
+#b
+def total(n):
+    sum = 1
+    factorial = 1
+
+    for i in range(1, n + 1):
+        factorial *=i
+        sum += 1/factorial
+
+    return(sum)
+
+number=int(input("Enter the value of n:", ))
+print("estimated value of the mathematical constant e:",total(number))
+
+#c
+def total(x,n):
+    sum = 1
+    factorial = 1
+
+    for i in range(1, n + 1):
+        factorial *=i
+        sum += (x**i)/factorial
+
+    return(sum)
+x=int(input("Enter the value of x:", ))
+number=int(input("Enter the value of n:", ))
+print("estimated value of the mathematical constant e^x:",total(x,number))

@@ -1,0 +1,27 @@
+x=int(input("Enter the value of x:", ))
+y=int(input("Enter the value of y:", ))
+a=int(input("Enter the value of a:", ))
+b=int(input("Enter the value of b:", ))
+g=int(input("Enter the value of g:", ))
+i=int(input("Enter the value of i:", ))
+j=int(input("Enter the value of j:", ))
+
+if ((not(x <  5) and (not(y >=7 ))) == (not((x < 5) or (y >= 7)))):
+    print("In case of a,both the original and new expressions are equivalent to each other")
+else:
+    print(" Here both the original and new expressions are Not equivalent)")
+
+if ((not(a == b) or (not(g != 5))) == (not((a == b) and (g != 5)))):
+    print("In case of b,both the original and new expressions are equivalent to each other")
+else:
+    print(" Here both the original and new expressions are Not equivalent")
+
+if (not(((x <= 8) and (y > 4)) == (not(x <= 8) or (not(y > 4))))):
+    print("In case of c,Here both the original and new expressions are equivalent to each other")
+else:
+    print(" Here both the original and new expressions are Not equivalent")
+
+if (not(((i > 4) or (j <= 6)) == (not(i > 4) and (not(j <= 6))))):
+    print("In case of d,Here both the original and new expressions are equivalent to each other")
+else:
+    print(" Here both the original and new expressions are Not equivalent")

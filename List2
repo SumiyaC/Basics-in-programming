@@ -1,0 +1,33 @@
+coins = [1, 2, 5, 10, 20, 50, 100, 200]
+count=0
+
+while count<10:
+    amount = float(input('Enter some amount in format y.xx:')) * 100
+    count += 1
+
+    amount = int(amount)
+    Coin2 = amount // coins[-1]
+    Reminding = amount - Coin2 * coins[-1]
+    Coin1 = Reminding // coins[-2]
+    Reminding -= Coin1 * coins[-2]
+    Coin50C = Reminding // coins[-3]
+    Reminding -= Coin50C * coins[-3]
+    Coin20C = Reminding // coins[-4]
+    Reminding -= Coin20C * coins[-4]
+    Coin10C = Reminding // coins[-5]
+    Reminding -= Coin10C * coins[-5]
+    Coin5C = Reminding // coins[-6]
+    Reminding -= Coin5C * coins[-6]
+    Coin2C = Reminding // coins[-7]
+    Reminding -= Coin2C * coins[-7]
+    Coin1C = Reminding // coins[-8]
+    Reminding -= Coin1C * coins[-8]
+
+    if Coin2 > 0: print(Coin2, 'x 2 euro coins')
+    if Coin1 > 0: print(Coin1, 'x 1 euro coins')
+    if Coin50C > 0: print(Coin50C, 'x 50 cents coin')
+    if Coin20C > 0: print(Coin20C, 'x 20 cents coin')
+    if Coin10C > 0: print(Coin10C, 'x 10 cents coin')
+    if Coin5C > 0: print(Coin5C, 'x 5 cents coin')
+    if Coin2C > 0: print(Coin2C, 'x 2 cents coin')
+    if Coin1C > 0: print(Coin1C, 'x 1 cents coin')

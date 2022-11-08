@@ -1,0 +1,24 @@
+students = []
+count = 1
+Input = input("Input student 1 first name (type 'none' to stop): ")
+
+while Input != "none":
+    student = (Input,)
+    Input = input(f"Input student {count} last name: ")
+    student += (Input,)
+    grades = []
+    Input = input(f"Input student {count} grade (type 'none' to stop): ")
+
+    while Input != "none":
+        grades += [int(Input)]
+        Input = input(f"Input student {count} grade (type 'none' to stop): ")
+    student += (grades,)
+    students += [student]
+    count += 1
+    Input = input(f"Input student {count} name (type 'none' to stop): ")
+
+
+for student in students:
+    print(student)
+    print("average:", sum(student[2])/len( student))
+    print()

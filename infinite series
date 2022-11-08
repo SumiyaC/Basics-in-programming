@@ -1,0 +1,16 @@
+a = 1
+sum = 0
+for i in range(10000000):
+
+    if i % 2 == 0:
+        sum += 4 / a
+        print(f'value of π approximated by {i+1} term of this series :{sum}')
+
+    else:
+        sum -= 4 / a
+        print(f'value of π approximated by {i + 1} term of this series :{sum}')
+
+      # plus 2 because denominator is odd
+    a += 2
+
+print(sum)

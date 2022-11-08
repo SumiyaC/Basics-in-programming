@@ -1,0 +1,15 @@
+def test(*grades):
+    sum=0
+    i=0
+    j=0
+    for n,g in grades:
+        sum+=g
+        j+=1
+        if g>=3:
+            i+=1
+    print("number of students who passed the exam:",i)
+    print("average:",sum/j)
+
+
+
+test(('name1',1),('name2',2),('name3', 4), ('name4', 3),  ('name4', 5) )
